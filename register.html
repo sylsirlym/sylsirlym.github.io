@@ -24,11 +24,11 @@
                                           <div class="row">
                                             <div class="input-field col half">
                                                 <label for="fname">First Name</label>
-                                                <input type="text" pattern="[A-Za-z]" placeholder="First name.." required>
+                                                <input type="text" pattern="[A-Za-z].{1,}" title= "Enter a valid name" placeholder="First name.." required>
                                             </div>
                                             <div class="input-field col half">
                                                 <label for="lname">Last Name</label>
-                                                <input type="text" pattern="[A-Za-z]" placeholder="Last name.." required>
+                                                <input type="text" pattern="[A-Za-z].{1,}" title= "Enter a valid name" placeholder="Last name.." required>
                                             </div>
                                           </div>
                                           <div class="row">
@@ -44,7 +44,7 @@
                                             </div>
                                             <div class="input-field col half">
                                                 <label for="cpass">Confirm Password</label>
-                                                <input type="password" id="cpass" placeholder="Confirm Password.." onChange="checkPasswordMatch();">
+                                                <input type="password" id="cpass" placeholder="Confirm Password.." onkeyup='check();'>
                                                 <span id='message'></span>
                                                 </div>
                                         <div align="center">
